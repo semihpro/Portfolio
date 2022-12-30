@@ -1,4 +1,4 @@
-import SingleExperiment from '../../../src/components/experiments/single-experiment';
+import SingleExperiment from '../../src/components/experiments/single-experiment';
 
 const ExperimentPage = ({ data }) => <SingleExperiment data={data} />;
 
@@ -8,7 +8,9 @@ export async function getStaticPaths() {
   const data = await import('/data/data.json');
   const allExperiments = data.allExperiments;
 
-  const allPaths = allExperiments.map((path) => {
+  const allPaths = allExperiments.map((
+
+  ) => {
     return {
       params: {
         cat: path["category-title"],

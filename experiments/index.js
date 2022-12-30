@@ -1,4 +1,4 @@
-import AllExperiments from '../../src/components/experiments/experiments-page'
+import AllExperiments from '../src/components/experiments/experiments-page'
 const index= ({data}) => {
     return <AllExperiments data={data} />
 }
